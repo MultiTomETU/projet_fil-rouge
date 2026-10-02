@@ -10,6 +10,8 @@ console.log(courriel.value) ;
 
 courriel.addEventListener("input", function(event) {
 	const valeur = courriel.value;
+
+	const estVide = valeur === "";
 	const aUnArobase = valeur.includes("@");
 
 	courriel.log("Courriel :", value) ;
