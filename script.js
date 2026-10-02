@@ -12,7 +12,7 @@ courriel.addEventListener("input", function(event) {
 	const valeur = courriel.value;
 	const aUnArobase = valeur.includes("@");
 
-	courrielMessage.textContent = value;
+	courriel.log("Courriel :", value) ;
 
 	if (valeur === "") {
 		courrielMessage,textContent = 
