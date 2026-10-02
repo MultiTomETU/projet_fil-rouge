@@ -12,5 +12,11 @@ courriel.addEventListener("input", function(event) {
 	const valeur = courriel.value;
 	console.log("Courriel :", valeur);
 
-	courrielMessage.textContent = "Autre chose";
+	courrielMessage.textContent = value;
+
+if (valeur === "") {
+	courrielMessage,textContent = "Le courriel est obligatoire"
+}
+
 });
+
