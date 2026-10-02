@@ -10,14 +10,20 @@ console.log(courriel.value) ;
 
 courriel.addEventListener("input", function(event) {
 	const valeur = courriel.value;
-	console.log("Courriel :", valeur);
+	const aUnArobase = valeur.includes("@");
 
 	courrielMessage.textContent = value;
 
-if (valeur === "") {
-	courrielMessage,textContent = 
-		"Le courriel est obligatoire"
-}
+	if (valeur === "") {
+		courrielMessage,textContent = 
+			"Le courriel est obligatoire";
+	} else if (!aUnArobase) {
+		courrielMessage.textContent =
+			"Le courriel n'est pas valide" ;
+	} else {
+		courrielMessage.textContent =
+			"Tout semble valide.";
+	}
 
 });
 
