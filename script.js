@@ -6,5 +6,6 @@ const courriel =
 console.log(courriel.value) ;
 
 courriel.addEventListener("input", function(event) {
-	console.log(event.target.value);
+	const valeur = courriel.value;
+	console.log("Courriel :", valeur);
 });
